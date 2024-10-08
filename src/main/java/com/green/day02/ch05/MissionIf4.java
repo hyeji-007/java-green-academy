@@ -7,6 +7,44 @@ public class MissionIf4 {
         int score = (int)(Math.random() * 101.0);
         System.out.printf("score: %d\n", score);
 
+        String grade = "D", opt = "";
+        int gradeScore = score / 10; //10의 자리 숫자
+
+        switch(gradeScore) {
+            case 9, 10:
+                grade = "A";
+                break;
+            case 8:
+                grade = "B";
+                break;
+            case 7:
+                grade = "C";
+                break;
+        }
+
+        int optScore = score % 10; //1의 자리 숫자
+
+        if (gradeScore > 6) {
+            if (optScore >= 8 || score == 100) {
+                opt = "+";
+            } else if (optScore >= 4) {
+                opt = "0";
+            } else {
+                opt = "-";
+            }
+        }
+        System.out.printf("%s%s\n", grade, opt);
+
+
+
+
+
+
+
+
+
+
+
         /*
         if (score >= 98) {
             System.out.printf("score: %d , A+\n", score);
@@ -31,6 +69,7 @@ public class MissionIf4 {
         }
         */
 
+        /*
         char grade = 'D', opt = '0';
 
         if (score >= 90) {
@@ -58,7 +97,7 @@ public class MissionIf4 {
             opt = ' ';
         }
         System.out.printf("%c%c\n", grade, opt);
-
+        */
 
 
 
