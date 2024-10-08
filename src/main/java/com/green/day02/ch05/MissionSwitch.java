@@ -14,6 +14,8 @@ public class MissionSwitch {
         System.out.print("키를 정수값으로 입력해 주세요.(cm): ");
         int height = scan.nextInt();
 
+        /*
+        System.out.printf("성별: %s, 키: %d\n", gender, height);
         if (gender.equals("w")) {
             if (height > 159) {
                 System.out.println("당신은 평균보다 큽니다.");
@@ -33,6 +35,22 @@ public class MissionSwitch {
                 System.out.println("당신은 평균보다 작습니다.");
             }
         }
+         */
+
+        int standHeight = 159;
+        switch(gender) {
+            case "m":
+                standHeight = 172;
+        }
+        if (standHeight < height) {
+            System.out.println("당신은 평균보다 큽니다.");
+        } else if (standHeight > height) {
+            System.out.println("당신은 평균보다 작습니다.");
+        } else {
+            System.out.println("당신은 평균입니다.");
+        }
+
+
 
 
 
