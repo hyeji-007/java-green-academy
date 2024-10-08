@@ -31,10 +31,20 @@ public class PrintFormat {
 
 
         System.out.printf("키는 %.1f\n", height);
-        System.out.printf("키는 %12.1f\n", 172.2843857);
-        System.out.printf("키는 %012.1f\n", 172.2843857);
-        System.out.printf("키는 %012.1f\n", 172.2843857);
+        System.out.printf("키는 %12.1f\n", 172.2843857); //칸 수 12칸, 우측 정렬
+        System.out.printf("키는 %-12.1f\n", 172.2843857); //칸 수 12칸, 좌측 정렬
+        System.out.printf("키는 %012.1f\n", 172.2843857); //.1 >> 소수점 아래 1자리 수까지
         //System.out.printf("키는 %-012.1f 입니다.\n", 172.2843857); //이건 안된다.
+
+        int won = 230000000;
+        System.out.printf("won: %d원\n", won);
+        System.out.printf("won: %,d원\n", won); // Nice!!
+        System.out.printf("won: %12d원\n", won); //우측 정렬
+        System.out.printf("won: %-12d원\n", won); //좌측 정렬
+        System.out.printf("won: %012d원\n", won);
+
+        String result = String.format("%,d", won);
+        System.out.println("rewult: " + result);
 
 
     }
