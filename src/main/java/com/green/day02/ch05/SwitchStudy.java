@@ -1,5 +1,7 @@
 package com.green.day02.ch05;
 
+import java.util.Scanner;
+
 public class SwitchStudy {
 
     public static void main(String[] args) {
@@ -8,7 +10,27 @@ public class SwitchStudy {
 
         System.out.printf("name: %s\n", name);
         System.out.printf("name2: %s\n", name2);
-        System.out.printf("name == name2: %b\n", name.equals(name2));
+        System.out.printf("name == name2: %b\n", name == name2);
+        System.out.printf("name.equals(name2): %b\n", name.equals(name2));
+
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("문자열을 입력해주세요 >> ");
+        String input = scan.nextLine();
+        if ("abc".equals(input)) {
+            System.out.println("def");
+        }
+        System.out.println("--끝--");
+
+        switch(input) {
+            case "abc":
+                System.out.println("switch-def");
+                break;
+        }
+        System.out.println("--끝--");
+
+
+
 
 
 
