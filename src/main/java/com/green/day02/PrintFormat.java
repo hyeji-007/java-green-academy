@@ -44,7 +44,7 @@ public class PrintFormat {
         System.out.printf("won: %012d원\n", won);
 
         String result = String.format("%,d", won);
-        System.out.println("rewult: " + result);
+        System.out.println("result: " + result);
 
 
     }
