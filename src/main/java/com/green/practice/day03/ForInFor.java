@@ -1,4 +1,4 @@
-package com.green.practice;
+package com.green.practice.day03;
 
 public class ForInFor {
 

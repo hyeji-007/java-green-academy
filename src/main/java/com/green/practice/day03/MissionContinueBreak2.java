@@ -1,4 +1,4 @@
-package com.green.practice;
+package com.green.practice.day03;
 
 public class MissionContinueBreak2 {
 
@@ -9,15 +9,13 @@ public class MissionContinueBreak2 {
 
         while (odd < 1000) {
             i++;
-            if ( (i % 2) == 1) {
+            if ((i % 2) == 1) {
                 System.out.println("i: " + i);
                 odd += i;
             }
         }
         System.out.println("마지막 더한 값: " + i);
         System.out.println("odd: " + odd);
-
-
 
 
     }
