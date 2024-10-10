@@ -1,15 +1,16 @@
-package com.green.day03.ch05;
+package com.green.practice;
 
 public class BreakBasic {
 
     public static void main(String[] args) {
+
         int n = 1;
         boolean search = false;
 
         while (n < 100) {
-            if(((n % 5) == 0) && ((n % 7) == 0)) {
+            if ( (n % 5) == 0 && (n % 7) == 0 )  {
                 search = true;
-                break; //while문을 탈출
+                break;
             }
             n++;
         }
@@ -19,6 +20,7 @@ public class BreakBasic {
         } else {
             System.out.println("못 찾음");
         }
+
 
 
     }
