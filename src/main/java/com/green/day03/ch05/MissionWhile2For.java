@@ -7,9 +7,10 @@ public class MissionWhile2For {
         for (int n = 1; n <= 100; n++) {
             System.out.println(n);
         }
+        System.out.println("--------------------");
 
-        for (int i = 100; i > 0; i--) {
-            System.out.println(i);
+        for (int n = 100; n > 0; n--) {
+            System.out.println(n);
         }
 
 
