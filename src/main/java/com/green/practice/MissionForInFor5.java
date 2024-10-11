@@ -1,11 +1,11 @@
-package com.green.day04.ch05;
+package com.green.practice;
 
 public class MissionForInFor5 {
+
     public static void main(String[] args) {
 
         int star = (int)(Math.random() * 6.0) + 3;
         System.out.println("star: " + star);
-
 
         for(int i = 1; i <= star; i++) {
             for(int z = star; z > i; z--) {
@@ -16,7 +16,7 @@ public class MissionForInFor5 {
             }
             System.out.println();
         }
-        System.out.println("-----------------------------------");
+        System.out.println("---------------------------------------");
 
         for(int i = star; i > 0; i--) {
             for(int z = 1; z <= star; z++) {
@@ -25,12 +25,5 @@ public class MissionForInFor5 {
             System.out.println();
         }
 
-
-
-
-
-
     }
-
-
 }
