@@ -11,5 +11,13 @@ public class MethodLogicalOp {
         System.out.println("b2: " + b2);
     }
 
+    static boolean logicalOp1(int n) {
+        return (1 <= n && n <= 100);
+    }
+
+    static boolean logicalOp2(int n) {
+        return ((n % 2) == 0 || (n % 3) == 0);
+    }
+
 
 }
