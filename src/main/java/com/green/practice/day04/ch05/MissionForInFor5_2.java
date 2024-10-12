@@ -7,42 +7,16 @@ public class MissionForInFor5_2 {
         System.out.println("star: " + star);
 
         for(int i = 0; i < star; i++) {
-            for (int z = 1; z <= star; z++) {
-                if (z < (star-i)) {
+            for(int z = 1; z <= star; z++) {
+                if(z < (star-i)) {
                     System.out.print("_");
-                } else {
+                }else {
                     System.out.print("*");
                 }
             }
             System.out.println();
         }
-        System.out.println();
-
-        for(int i = 1; i <= star; i++) {
-            for(int z = 0; z < star; z++) {
-                if(z >= (star-i)) {
-                    System.out.print("*");
-                } else {
-                    System.out.print("_");
-                }
-            }
-            System.out.println();
-        }
-        System.out.println();
-
-
-        for(int i = 1; i <= star; i++) {
-            for(int z = 0; z < (star-i); z++) {
-                System.out.print("_");
-            }
-
-            for(int z = 0; z < i; z++) {
-                System.out.print("*");
-            }
-            System.out.println();
-        }
-
-
+        System.out.println("--------------------------------------");
 
 
     }

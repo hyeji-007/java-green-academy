@@ -7,7 +7,7 @@ public class MissionForInFor5_2 {
         System.out.println("star: " + star);
 
         for(int i = 0; i < star; i++) {
-            for (int z = 0; z <= star; z++) {
+            for (int z = 1; z <= star; z++) {
                 if (z < (star-i)) {
                     System.out.print("-");
                 } else {
