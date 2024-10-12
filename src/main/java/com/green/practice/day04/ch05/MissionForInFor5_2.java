@@ -313,6 +313,104 @@ public class MissionForInFor5_2 {
             }
             System.out.println();
         }
+        System.out.println();
+
+        for(int i = 1; i <= star; i++) {
+            for(int z = 1; z <= star; z++) {
+                System.out.print(z < i ? "_" : "*");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        for(int i = 1; i <= star; i++) {
+            for(int z = 1; z <= star; z++) {
+                if(z > i) {
+                    System.out.print("_");
+                } else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        for(int i = star; i >= 1; i--) {
+            for(int z = 1; z <= i; z++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        for(int i = 0; i < star; i++) {
+            for(int z = 0; z < star; z++) {
+                if(z > i) {
+                    System.out.print("_");
+                } else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        for(int i = 1; i <= star; i++) {
+            for(int z = 1; z <= star; z++) {
+                System.out.print(z > i ? "_" : "*");
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        for(int i = 1; i <= star; i++) {
+            for(int z = 1; z <= star; z++) {
+                if(z > i) {
+                    System.out.print("_");
+                } else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        for(int i = 1; i <= star; i++) {
+            for(int z = star; z >= 1; z--) {
+                if (z < i) {
+                    System.out.print("_");
+                } else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+
+        for(int i = 0; i < star; i++) {
+            for(int z = 1; z <= star; z++) {
+                if (z > i) {
+                    System.out.print("*");
+                } else {
+                    System.out.print("_");
+                }
+            }
+            System.out.println();
+
+        }
+        System.out.println();
+
+
+        for(int t = 1; t <= star; t++) {
+            for(int z = 1; z <= star; z++) {
+                if(z < t) {
+                    System.out.print("_");
+                } else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+    }
 
 
     }
