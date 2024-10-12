@@ -11,22 +11,19 @@ public class MissionForInFor5 {
             for(int z = star; z > i; z--) {
                 System.out.print("_");
             }
-            for(int t = 0; t < i; t++) {
+            for(int z = 0; z < i; z++) {
                 System.out.print("*");
             }
             System.out.println();
         }
-        System.out.println();
+        System.out.println("-------------------------------------------");
 
         for(int i = star; i > 0; i--) {
             for(int z = 1; z <= star; z++) {
-                System.out.print(z < i ? "-" : "*");
+                System.out.print(z < i ? "_" : "*");
             }
             System.out.println();
         }
-
-
-
 
 
     }

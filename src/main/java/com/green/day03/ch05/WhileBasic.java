@@ -21,3 +21,8 @@ public class WhileBasic {
         System.out.println("--끝--");
     }
 }
+
+
+
+
+
