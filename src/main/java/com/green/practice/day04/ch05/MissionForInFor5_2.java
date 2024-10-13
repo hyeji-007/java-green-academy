@@ -273,7 +273,7 @@ public class MissionForInFor5_2 {
         System.out.println();
 
         for(int i = 1; i <= star; i++) {
-            for(int z = i; z <= star; z++) {
+            for(int z = 1; z <= star; z++) {
                 if (z < i) {
                     System.out.print("_");
                 } else {
@@ -282,7 +282,7 @@ public class MissionForInFor5_2 {
             }
             System.out.println();
         }
-        System.out.println();
+        System.out.println("0000000000000000000000000");
 
         for(int i = 0; i < star; i++) {
             for(int z = star; z > i; z--) {
