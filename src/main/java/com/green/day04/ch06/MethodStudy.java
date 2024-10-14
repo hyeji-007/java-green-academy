@@ -37,10 +37,11 @@ public class MethodStudy {
     //sum이라는 이름의 static 메소드를 정의(파라미터(매개변수) 2개)
     static void sum(int n1, int n2) {
         System.out.printf("%d + %d = %d\n", n1, n2, (n1 + n2));
+        return; //메소드 종료와 동시에 돌아감, void메소드 에서는 return 생략 가능
     }
 
     static int returnSum(int n1, int n2) { //값을 다시 되돌려준다
-        return n1 + n2;
+        return n1 + n2; //return메소드에서는 return 생략 불가
     }
 
 
