@@ -5,11 +5,11 @@ public class ReculFatorial {
     public static void main(String[] args) {
         //5! >> 5 * 4 * 3 * 2 * 1
         //6! >> 6 * 5 * 4 * 3 * 2 * 1
-        System.out.println(factorial(6));
-        System.out.println(factorial(5));
-        System.out.println(factorial(4));
+        //System.out.println(factorial(6));
+        //System.out.println(factorial(5));
+        //System.out.println(factorial(4));
         System.out.println(factorial(3));
-        System.out.println(factorial(2));
+        //System.out.println(factorial(2));
 
     }
 
@@ -21,6 +21,12 @@ public class ReculFatorial {
         }
 
     }
+
+    /*
+    f(3) >> 3 * f(2)
+        f(2) >> 2 * f(1)
+            f(1) >> return 1
+     */
 
 
 
