@@ -1,4 +1,4 @@
-package com.green.practice.practice;
+package com.green.practice.practice_2;
 
 public class Practice2 {
 
