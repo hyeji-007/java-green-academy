@@ -6,6 +6,7 @@ public class OnlyExitReturn {
         devide(4, 2);
         devide(6, 2);
         devide(9, 0);
+        System.out.println("--끝--");
 
         /*
         0으로 숫자를 나누려고 하면 수학적 예외가 발생이 된다.
@@ -17,6 +18,10 @@ public class OnlyExitReturn {
     }
 
     static void devide(int n1, int n2){
+        if(n2 == 0) {
+            System.out.println("0으로 나눌 수 없습니다.");
+            return; //메소드 종료, 메소드를 호출한 곳으로 돌아간다.
+        }
         System.out.printf("나눗셈 결과: %d\n", (n1 / n2));
     }
 
