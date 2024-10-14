@@ -5,7 +5,8 @@ public class MethodReturns {
     public static void main(String[] args) {
         int result;
         result = adder(4, 5); //return 메소드
-        System.out.println(result);
+        System.out.printf("%d + %d = %d\n", 4, 5, result);
+        System.out.printf("%.1f x %.1f = %.1f\n", 3.5, 3.5, square(3.5));
 
     }
 
@@ -17,6 +18,10 @@ public class MethodReturns {
         return r;
          */
 
+    }
+
+    static double square(double n) {
+        return n * n;
     }
 
 
