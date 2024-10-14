@@ -7,11 +7,11 @@ public class Mission06_1_1 {
     }
 
     static void calc(int n1, int n2) {
-        System.out.printf("%s + %s = %s\n" , n1, n2, (n1 + n2));
-        System.out.printf("%s - %s = %s\n" , n1, n2, (n1 - n2));
-        System.out.printf("%d / %d = %.3f\n" , n1, n2, ((float)n1 / n2));
-        System.out.printf("%s * %s = %s\n" , n1, n2, (n1 * n2));
-        System.out.printf("%s %% %s = %s\n" , n1, n2, (n1 % n2));
+        System.out.printf("%d + %d = %d\n" , n1, n2, (n1 + n2));
+        System.out.printf("%d - %d = %d\n" , n1, n2, (n1 - n2));
+        System.out.printf("%d / %d = %.1f\n" , n1, n2, ((float)n1 / n2));
+        System.out.printf("%d * %d = %d\n" , n1, n2, (n1 * n2));
+        System.out.printf("%d %% %d = %d\n" , n1, n2, (n1 % n2));
     }
 
 
