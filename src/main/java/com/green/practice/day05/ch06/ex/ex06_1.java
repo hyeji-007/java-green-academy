@@ -10,7 +10,7 @@ public class ex06_1 {
         System.out.printf("%s + %s = %s\n", n1, n2, (n1 + n2));
         System.out.printf("%s - %s = %s\n", n1, n2, (n1 - n2));
         System.out.printf("%s * %s = %s\n", n1, n2, (n1 * n2));
-        System.out.printf("%s / %s = %s\n", n1, n2, (n1 / n2));
+        System.out.printf("%s %% %s = %s\n", n1, n2, (n1 % n2));
 
     }
 
