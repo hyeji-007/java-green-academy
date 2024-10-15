@@ -8,8 +8,8 @@ public class MethodDef {
         System.out.println("프로그램의 끝");
     }
 
-    static void hiEveryone(int age) {
-        System.out.printf("좋은 아침입니다.\n제 나이는 %d세 입니다.\n", age);
+    static void hiEveryone(int age) { //메소드 선언부( 리턴 타입, 메소드명, parameter(매개변수) )
+        System.out.printf("좋은 아침입니다.\n제 나이는 %d세 입니다.\n", age); //메소드 구현부
     }
 
 

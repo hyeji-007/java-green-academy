@@ -16,7 +16,7 @@ public class LocalVariable {
 
     public static void multiply(int n1) {
         System.out.println(aaa);
-        int num1 = 11;
+        int num1 = 11; //지역 변수: 메소드 안에서 선언됨
     }
 
 

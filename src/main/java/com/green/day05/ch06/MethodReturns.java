@@ -10,7 +10,7 @@ public class MethodReturns {
 
     }
 
-    static int adder(int n1, int n2) {
+    static int adder(int n1, int n2) { //int로 리턴한다고 약속
         return n1 + n2;
 
         /*
