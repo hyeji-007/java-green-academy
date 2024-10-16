@@ -14,6 +14,7 @@ public class PrimitiveVsReferenceTest {
     public static void main(String[] args) {
 
         int num = 10; //지역 변수, Primitive type
+        Integer num2 = num; //멤버필드는 외부에서 접근하지 못하도록 private화 함.(method만 사용 가능) But 상수는 뜬다.
         changeNum(num); //changeNum(int num)과 공간이 다르다. primitive 타입 특.
         System.out.println("num: " + num); //10
 

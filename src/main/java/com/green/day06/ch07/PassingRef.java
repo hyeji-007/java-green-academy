@@ -36,6 +36,10 @@ public class PassingRef {
     PassingRef pf = new PassingRef();
     pf.check(ba);
 
+    //check(ba) 호출을 보고 알 수 있는 정보
+    //1. (void)
+    //2. (static)
+
     1. void, return
     2. static, non-static( (주소값.)이 필요, 객체화해야 함 )
      */

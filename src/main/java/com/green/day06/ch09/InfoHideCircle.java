@@ -16,7 +16,7 @@ public class InfoHideCircle {
     }
 }
 
-class Circle2 {
+class Circle2 { //default
     private double rad = 0; //private 선언: 클래스를 벗어나면 사용 못한다.
     final double PI = 3.14; //private 선언 x, 외부에서 사용 가능
 

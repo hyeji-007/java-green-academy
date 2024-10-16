@@ -8,10 +8,12 @@ public class BankAccountTest {
         //BankAccount: 참조 타입(Reference type) <-> 기본 타입(Primitive type)
         //              -> 참조 타입: 객체의 주소값을 저장한다.
         //ba는 BankAccount 객체 주소값만 담을 수 있는 참조변수이다.
+        //BankAccount ba >> 오로지 "BankAccount 객체의 주소값"만 담을 수 있는 참조변수이다.
+        //new BankAccount() >> 객체화
         BankAccount ba = new BankAccount(); //객체 생성 >> 객체의 주소값이 ba에 저장된다.
         //BankAccount는 reference 변수
 
-        ba.deposit(1000);
+        ba.deposit(1000); //.(메소드) 호출/명령
         ba.checkMyBalance();
         ba.deposit(2000);
         ba.checkMyBalance();

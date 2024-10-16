@@ -34,7 +34,7 @@ class Student {
 
 
     //name-getter
-    public String getName() { //빼는 건 return 타입, 파라미터 필요 x
+    public String getName() { //빼는 건 return 타입(변수의 타입), 파라미터 필요 x
         return name; // 3.
     }
 

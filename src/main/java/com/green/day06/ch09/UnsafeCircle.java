@@ -16,6 +16,8 @@ public class UnsafeCircle {
         c.rad = -3.3; //setRad를 통했다면 음수로 출력 x, 문제가 발생될 가능성이 있음, 안전 x
         System.out.println("원의 넓이(4): " + c.getArea());
 
+
+
     }
 }
 

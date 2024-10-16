@@ -23,6 +23,7 @@ public class AccessLevetTest {
         class 키워드 앞에 public을 붙일 수 있는 경우는
         java 파일명과 class명이 일치할 때만 붙일 수 있다.
         나머지는 불가능
+        1 class 만들 때 1 file 만듦
 
 public class AccessLevel {
     class AccessLevel {
