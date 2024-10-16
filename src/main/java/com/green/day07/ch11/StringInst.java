@@ -21,6 +21,7 @@ public class StringInst {
         System.out.println(str.length());
     }
 
+
 }
 
 
