@@ -22,5 +22,10 @@ public class Main2 {
 
         //메소드 호출
         int sum = calc.add(5,3);
+        int product = calc.multiply(5,6);
+
+        //결과 출력
+        System.out.println("Sum: " + sum);
+        System.out.println("Product: " + product);
     }
 }
