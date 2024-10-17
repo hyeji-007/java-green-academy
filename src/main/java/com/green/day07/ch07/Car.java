@@ -29,7 +29,7 @@ public class Car {
 
 
     public Car() { //파라미터가 있는 생성자로 작업을 몰아준다.
-        this("white", "auto", 4);
+        this("white", "auto", 4); //하드코딩 되었다. 기본생성자로 객체 생성시 항상 같은 값이다.
         //this.introduce();
         //introduce();
     }

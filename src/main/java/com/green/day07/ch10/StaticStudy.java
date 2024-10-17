@@ -47,7 +47,7 @@ public class StaticStudy {
         //Math math = new Math(); //기본생성자 앞에 private 붙음 >> 객체 생성 x
         //math.random();
         //이렇게 두 줄을 통해서 메소드를 호출할 필요가 없기 때문에 static 메소드 사용이 편하다.
-        //그리고 Math 클래스는 객체화를 할 수 없다. 이유는 기본 생성자 접근 레벨을 private으로 설정해기 때문
+        //그리고 Math 클래스는 객체화를 할 수 없다. 이유는 기본 생성자 접근 레벨을 private으로 설정했기 때문
 
     }
 
@@ -89,7 +89,7 @@ class NonStaticNumBox {
 
     //hello 메소드
     void hello() { 
-        System.out.println("hello");
+        System.out.println("hello"); //System(클래스), out(reference 멤버변수), println(메소드)
         /*
         1.hello() 메소드는 NonStaticNumBox 클래스의 인스턴스 메소드로 선언되었고
         sum()메소드 내부에서 호출될 수 있음

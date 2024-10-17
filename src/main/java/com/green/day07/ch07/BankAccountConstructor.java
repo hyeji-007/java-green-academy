@@ -75,6 +75,8 @@ public class BankAccountConstructor {
         //파라미터가 있는 생성자 호출 or 오버로딩된 생성자 호출
         BankAccount2 ba2 = new BankAccount2("111-222", "998989-1778888", 10000);
         ba2.checkMyBalance();
+        
+
     }
 }
 

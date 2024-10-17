@@ -3,6 +3,7 @@ package com.green.day07.ch10;
 import static java.lang.Math.*; //*은 all의 의미가 있다.
 //Math 클래스 아래에 있는 static 멤버필드, 멤버메소드 전부 import하라는 의미
 
+
 public class StaticImport {
     public static void main(String[] args) {
         /*

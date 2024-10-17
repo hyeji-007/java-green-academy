@@ -3,9 +3,9 @@ package com.green.day07.ch10;
 public class ClassVar { //static
 
     public static void main(String[] args) {
-        InstCnt.instNum = 10;
+        //InstCnt.instNum = 10; //static이 붙으면 (클래스명.)으로 접근해서 사용
         InstCnt ic1 = new InstCnt();
-        InstCnt.instNum = 5;
+        //InstCnt.instNum = 5;
         InstCnt ic2 = new InstCnt();
         InstCnt ic3 = new InstCnt();
     }
@@ -14,8 +14,8 @@ public class ClassVar { //static
 class InstCnt {
     static int instNum; //static 변수: 클래스에서 하나만 존재
     int value; //일반 인스턴스 변수, 각 객체마다 개별적으로 존재
-    InstCnt() { //기본 생성자 (default constructor)
-        instNum++; //모든 객체가 공유하는 static 변수(instNum), 생성될 때마다 증가
+    InstCnt() { //기본 생성자 (default constructor): 클래스와 이름 같고 리턴타입 없음 + 파라미터 x -> 기본생성자
+        instNum++; //모든 객체가 공유하는 static 변수(instNum) -> 공간이 딱 하나 만들어짐, 생성될 때마다 증가
         value++; //각 객체마다 별도로 존재하는 인스턴스 변수, 객체 생성 시마다 증가
         System.out.println("인스턴스 생성: " + InstCnt.instNum);
         System.out.println("인스턴트 생성: " + instNum);

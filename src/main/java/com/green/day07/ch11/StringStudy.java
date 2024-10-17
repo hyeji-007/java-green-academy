@@ -44,5 +44,16 @@ public class StringStudy {
         int n = 10;
         String str9 = n + "";
         String str10 = String.valueOf(n); //모든 타입을 String으로 변경할 수 있다.
+
+        System.out.println("-------------------");
+        String str11 = "abcdefgcd";
+        String str11Result = str11.replace("cd", "CD"); //정규식을 쓰고 싶다면(패턴, ex.이메일(@ 도메인)) >> replaceall 사용
+        System.out.println("str11Result: " + str11Result);
+
+
+
+
+
+
     }
 }

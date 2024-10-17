@@ -10,6 +10,10 @@ public class MissionExt {
 
         //String ext = fileNm.substring(fileNm.lastIndexOf(".")+ 1);
 
+        int idx = fileNm.lastIndexOf(".")+1;
+        String ext2 = fileNm.substring(idx);
+        System.out.println(ext2);
+
         String ext = fileNm.substring(fileNm.lastIndexOf(".")+ 1);
 
         System.out.println(ext); //jpg
