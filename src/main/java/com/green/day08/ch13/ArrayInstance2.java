@@ -20,6 +20,7 @@ public class ArrayInstance2 {
         System.out.println(arr[1]);
         System.out.println(arr[2]);
 
+
     }
 }
 
