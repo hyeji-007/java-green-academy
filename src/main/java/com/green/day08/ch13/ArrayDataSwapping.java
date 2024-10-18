@@ -14,7 +14,7 @@ public class ArrayDataSwapping {
         arr[0] = arr[2];
         arr[2] = temp;
 
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr)); //클래스명.메소드 호출 >> class 메소드
 
     }
 }

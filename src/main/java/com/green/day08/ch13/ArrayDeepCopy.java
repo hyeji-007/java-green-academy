@@ -10,7 +10,7 @@ public class ArrayDeepCopy {
             copyArr[i] = arr[i]; //deep copy //동등성(값이 같다)
         }
 
-        System.out.println("arr == copyArr: " + (arr == copyArr)); //주소값은 달라서 false
+        System.out.println("arr == copyArr: " + (arr == copyArr)); //주소값은 달라서 false(deep copy는 서로 다른 객체에 접근)
         //참조변수끼리의 == 비교는 동일성(같은 주소값)을 묻는다.
 
         int[] arr2 = copyArr; //얕은 복사(shallow copy), 주소값 복사

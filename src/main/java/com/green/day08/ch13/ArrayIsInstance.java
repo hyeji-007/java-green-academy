@@ -16,5 +16,7 @@ public class ArrayIsInstance {
         System.out.printf("ar2.length: %d\n", ar2.length);
         System.out.printf("ar3.length: %d\n", ar3.length);
 
+
+
     }
 }
