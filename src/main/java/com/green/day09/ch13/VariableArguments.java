@@ -11,7 +11,7 @@ public class VariableArguments {
 
         sumVar(1); //[1] >> 1
         sumVar(1, 2); //[1, 2] >> 3
-        sumVar(1, 12, 3); //[1, 2, 3] >>6
+        sumVar(1, 2, 3); //[1, 2, 3] >>6
         sumVar(1, 2, 3, 1, 2, 3); //12
 
     }
@@ -26,13 +26,13 @@ public class VariableArguments {
     }
 
 
-    /*
+
     static void sum (int n1, int n2) {
         //System.out.println(n1 + n2);
         sumVar(n1, n2, 0);
     }
 
-     */
+
 
     static void sum (int n1, int n2, int n3) {
         System.out.println(n1 + n2 + n3);

@@ -11,6 +11,37 @@ public class Mission13_1 {
     단 반복문을 사용할 때 minValue의 정의에서는 일반적인 for문을 사용
     maxValue의 정의에서는 enhanced-for문을 사용하자.
      */
+    public static void main(String[] args) {
+        int[] arr = { 43, 88, 320, 100, 3, 220, 67, 1 };
+        int min = minValue(arr);
+        System.out.println("min: " + min);
+        int max = maxValue(arr);
+        System.out.println("max: " + max);
+
+    }
+
+    public static int minValue(int[] arr) {
+        int min = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    public static int maxValue(int[] arr) {
+        int max = arr[0];
+        for (int i : arr) {
+            if (i > max) {
+                max = i;
+            }
+        }
+        return max;
+    }
+
+
+
 
 
 
