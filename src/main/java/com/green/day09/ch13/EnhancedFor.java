@@ -4,7 +4,7 @@ package com.green.day09.ch13;
 public class EnhancedFor {
     //향상된 for문, 강화된 for문, foreach문
     public static void main(String[] args) {
-        int[] arr = { 10, 22, 7, 4, 80 };
+        int[] arr = { 10, 22, 7, 4, 80 }; //배열의 주소값을 하나 주는 것 (데이터는 하나밖에 못 줌, reference는 주소값)
 
         for(int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
