@@ -34,9 +34,20 @@ public class MyArrays {
         for(int i = 1; i < arr.length; i++) {
             sb.append(", ");
             sb.append(arr[i]);
-
         }
         return sb.append("]").toString();
+    }
+
+    public static int[] copyOf(int[] arr) {
+        return copyOf(arr, arr.length);
+    }
+
+    public static int[] copyOf(int[] arr, int length) {
+        int[] temp = new int[length];
+        for(int i = 0; i < length; i++) {
+            temp[i] = arr[i];
+        }
+        return temp;
     }
 
 }
