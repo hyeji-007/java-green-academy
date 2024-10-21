@@ -59,6 +59,7 @@ class Product {
         return String.format("제품명: %s, 가격: %,d원", name, price);
     }
 
+
 }
 
 
