@@ -67,7 +67,7 @@ class BusinessMan extends Man {
     public void jump() {
         super.jump(); //super. 을 생략하면 나자신 호출(재귀 호출)이기 때문에 무한 루프가 된다.
         //오버라이딩: 부모가 가진 메소드를 사용하는 것이 아니라 내가 재정의한 메소드를 사용하게끔 하는 기법
-        System.out.printf("%s에 다니는 (이)가 점프!\n", company, getName());
+        System.out.printf("%s에 다니는 %s(이)가 점프!\n", company, getName());
         //name은 private이기 때문에 바로 접근할 수 없다.
         //public 으로 상속받는 getName 메소드를 호출하여 이름값을 얻는다. (public >> 접근 권한이 있다)
     }
