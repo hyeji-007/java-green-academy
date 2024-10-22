@@ -3,8 +3,7 @@ package com.green.day11.ch16;
 public class MyFriends2 {
 
     public static void main(String[] args) {
-
-
+        UnivFriend2[] arr1 = new UnivFriend2[2];
     }
 }
 
