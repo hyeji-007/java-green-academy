@@ -23,7 +23,7 @@ class ClassB extends ClassA {
     }
 }
 
-class ClassC extends ClassB {
+class ClassC extends ClassB { //단일 상속만 가능
     public ClassC() {
         super();
         System.out.println("==== ClassC ====");
