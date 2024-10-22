@@ -23,7 +23,8 @@ public class MyBusinessMan {
 class Man {
     private String name;
 
-    public Man(String name) {
+    public Man(String name) { //생성자
+        super(); //생략
         this.name = name;
     }
 
@@ -46,7 +47,7 @@ class BusinessMan extends Man {
     private String position;
 
     public BusinessMan(String name, String company, String position) { //this. >>멤버필드, 멤버메소드 호출할 때 사용 , this() >> 생성자 호출할 때 사용
-        super(name); //바로 위에 있는 부모의 생성자를 호출, 부모의 기본생성자가 없기 때문에 오류
+        super(name); //바로 위에 있는 부모의 생성자를 호출, 부모의 기본생성자가 없기 때문에 오류, 부모의 주소값이 저장되어 있는 상수이다.
         // super 소괄호를 생략하면 자동으로 super(); 이 내용만 추가된다.
         // super 소괄호를 생성자의 가장 위에 작성이 되어야 한다. (주의!!), logic보다는 위에 있으면 된다.
         // 해결 방법 2가지

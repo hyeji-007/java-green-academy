@@ -23,7 +23,7 @@ public class TwoDimenArray {
         int[] tmp1 = arr3[0];
         System.out.println(tmp1[2]);
         System.out.println("tmp1[2]: " + tmp1[2]);
-        System.out.println("arr3[0][2]: " + arr3[0][2]);
+        System.out.println("arr3[0][2]: " + arr3[0][2]); //tmp1[2]
 
 
 
