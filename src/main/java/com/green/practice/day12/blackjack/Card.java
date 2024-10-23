@@ -19,8 +19,8 @@ public class Card {
         return denomination;
     }
 
+    @Override
     public String toString() {
         return String.format("%s(%s)", pattern, denomination);
     }
-
 }

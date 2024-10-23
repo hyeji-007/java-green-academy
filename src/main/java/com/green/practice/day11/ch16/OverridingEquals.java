@@ -29,7 +29,7 @@ class NumBox {
     }
 
     @Override
-    public boolean equals(Object object) {
+    public boolean equals(Object object) { //최상위 클래스가 Object
         if (object instanceof NumBox) { // 타입과 동일한 객체이거나 자식 객체
             return (num == ((NumBox)object).num);
         }
