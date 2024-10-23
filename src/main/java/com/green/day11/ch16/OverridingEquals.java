@@ -4,14 +4,14 @@ public class OverridingEquals {
     public static void main(String[] args) {
 
         String s1 = new String("10");
-        String s2 = new String("10");
-
-        System.out.println("s1 == s2: " + (s1 == s2));
-
-        System.out.println("s1.equals(s2): " + s1.equals(s2));
-
+        String s2 = new String("10"); //동일하지는 않지만 동등하다.
         NumBox n1 = new NumBox(10);
         NumBox n2 = new NumBox(10);
+        NumBox n3 = new NumBox(13);
+
+
+        System.out.println("s1 == s2: " + (s1 == s2)); //주소값 비교이기 때문에 false
+        System.out.println("s1.equals(s2): " + s1.equals(s2));
 
         System.out.println("n1: " + n1);
         System.out.println("n2: " + n2);
@@ -22,9 +22,10 @@ public class OverridingEquals {
 
         // 주소값 비교
         System.out.println("n1 == n2: " + (n1 == n2)); //false
-
         // n1과 n2가 같은 값(num)을 가지고 있는지 equals로 비교
         System.out.println("n1.equals(n2): " + n1.equals(n2));
+        System.out.println("n1.equals(n3): " + n1.equals(n3));
+ 
     }
 }
 
@@ -35,29 +36,39 @@ class NumBox {
         this.num = num;
     }
 
+   /*
+    public boolean equals(Object object) { //equals()메소드는 항상 Object 타입의 매개변수를 받음(모든 클래스의 최상위 부모 클래스가 Object이기 때문)
+       if (object instanceof NumBox) {
+           return num == ((NumBox)object).num;
+       }
+       return false;
+    }
+
+    */
+
     @Override
     public boolean equals(Object object) { //equals()메소드는 항상 Object 타입의 매개변수를 받음(모든 클래스의 최상위 부모 클래스가 Object이기 때문)
-        if (object instanceof NumBox) { //전달된 객체(object)가 NumBox 클래스의 인스턴스인가?
-            return num == ((NumBox) object).num;
-        }
-        return false;
-    }
-
-
-
-    /*
-    @Override
-    public boolean equals(Object object) {
-        if (this == object) { //같은 객체를 가리킬 경우
-            return true;
-        }
-        if (object == null || getClass() != object.getClass()) { //클래스가 다를 경우
+        if(!(object instanceof NumBox)) { //NumBox와 다른 다입이면 return false
             return false;
         }
-        NumBox numBox = (NumBox) object; //형변환 후 num 비교
-        return num == numBox.num;
+        NumBox nb = (NumBox)object;
+        return this.num == nb.num;
+        //return this.num == nb.getNum();
     }
-     */
+
+    //문자열로도 해결할 수 있으나 퍼포먼스(성능)가 좋지 않기 때문에 비추천
+    public boolean equals2(Object object) {
+        if(!(object instanceof NumBox)) { //NumBox와 다른 다입이면 return false
+            return false;
+        }
+        return toString().equals(object.toString());
+    }
+
+    int getNum() {
+        return num;
+    }
+
+
 
     @Override
     public String toString() {
