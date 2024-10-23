@@ -5,6 +5,9 @@ public class OverridingToString {
     public static void main(String[] args) {
         Cake c = new Cake();
         System.out.println(c);
+        System.out.println(c.toString()); //c와 c.toString()은 type(Cake / String)이 다르다. >> 같은 주소값 x
+        System.out.println(c.equals(c.toString())); //false
+
         CheeseCake cheeseCake = new CheeseCake();
         System.out.println(cheeseCake);
 
@@ -15,7 +18,7 @@ public class OverridingToString {
 
 class Cake extends Object {
     @Override //오버라이딩 실수 방지용, 오버라이딩이 아닐시 컴파일 에러
-    public String toString() { //toString 오버라이딩 할 수 있다.
+    public String toString() { //toString 메소드로 오버라이딩
         return "My birthday cake";
     }
 
