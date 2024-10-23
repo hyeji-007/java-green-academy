@@ -56,13 +56,17 @@ class NumBox {
         //return this.num == nb.getNum();
     }
 
+
     //문자열로도 해결할 수 있으나 퍼포먼스(성능)가 좋지 않기 때문에 비추천
+    /*
     public boolean equals2(Object object) {
         if(!(object instanceof NumBox)) { //NumBox와 다른 다입이면 return false
             return false;
         }
         return toString().equals(object.toString());
     }
+
+     */
 
     int getNum() {
         return num;
