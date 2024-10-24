@@ -28,6 +28,22 @@ public class CardDeck2 {
         }
     }
 
+    public Card draw() {
+        if (selectedIdx == 52) {
+            return null;
+        }
+        Card tmp = cards[selectedIdx];
+        cards[selectedIdx] = null;
+        selectedIdx++;
+        return tmp;
+    }
+
+    public void checkCards() {
+        for (Card c : cards) {
+            System.out.println(c);
+        }
+    }
+
 
     public String getDenomination(int n) {
         if(n < 1 || n > 13) {
