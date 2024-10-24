@@ -31,10 +31,13 @@ public class CardDeck {
             }
         }
 
+
         //섞어주세요 (랜덤, 스와핑)
         shuffle();
 
-        /*
+
+    }
+         /*
         for(int i = 0; i < cards.length; i++) {
             int ridx = (int)(Math.random() * cards.length);
 
@@ -52,8 +55,6 @@ public class CardDeck {
             System.out.println(card);
         }
          */
-
-    }
 
 
 
