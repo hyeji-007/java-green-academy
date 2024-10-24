@@ -37,6 +37,15 @@ public class CardDeck {
 
 
     }
+
+    private void shuffle() {
+        for(int i = 0; i < cards.length; i++) {
+            int rIdx = (int)(Math.random() * cards.length); //0 ~ 51
+            Card tmp = cards[i];
+            cards[i] = cards[rIdx];
+            cards[rIdx] = tmp;
+        }
+    }
          /*
         for(int i = 0; i < cards.length; i++) {
             int ridx = (int)(Math.random() * cards.length);
@@ -90,14 +99,7 @@ public class CardDeck {
 
 
 
-    private void shuffle() {
-        for(int i = 0; i < cards.length; i++) {
-            int rIdx = (int)(Math.random() * cards.length); //0 ~ 51
-            Card tmp = cards[i];
-            cards[i] = cards[rIdx];
-            cards[rIdx] = tmp;
-        }
-    }
+
 
     //n: 1 > "A"
     //n: 2~10 > 그대로 문자열로 만들어서 2 > "2", 3 > "3", 10 > "10"
