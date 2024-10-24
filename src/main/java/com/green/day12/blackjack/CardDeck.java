@@ -9,6 +9,10 @@ public class CardDeck {
     private int selectedIdx = 0; //외부에 줘야할 카드의 index값
 
     public CardDeck() {
+        /*
+        Card c; = null; //지역 변수는 사용하기 전에 초기화해주어야 한다. 객체화가 된 애들은 기본적은로 default값을 갖는다.
+        c.getPattern();
+         */
         cards = new Card[52];
         patterns = new String[]{ "Diamond", "Heart", "Clova", "Spade" };
 
@@ -17,11 +21,11 @@ public class CardDeck {
 
 
         int idx = 0;
-        for(int i = 0; i < patterns.length; i++) { //0, 1, 2, 3
+        for(int i = 0; i < patterns.length; i++) { //0, 1, 2, 3 >> 총 4번 실행
             String pattern = patterns[i];
-            for(int z = 1; z <= 13; z++) { // 1~13
+            for(int z = 1; z <= 13; z++) { // 1~13 >> 총 52번 실행
                 String denomination = getDenomination(z);
-                cards[idx++] = new Card(pattern, denomination);
+                cards[idx++] = new Card(pattern, denomination); //Card 객체 생성
                 //cards[idx++] = new Card(Patterns[i], getDenomination(z));
             }
         }
@@ -51,11 +55,17 @@ public class CardDeck {
     }
 
     // 주소값 하나씩 리턴, 리턴 주소값 지워야하고 selectedIdx 이용하여 해결
-    public Card draw() {
-        Card c = cards[selectedIdx];
+    public Card draw() { //스와핑이랑 비슷함
+        Card tmp = cards[selectedIdx];
         cards[selectedIdx]  = null;
-        selectedIdx++;
-        return c;
+        selectedIdx++; //카드를 빼낼 자리: selectedIdx
+        return tmp; //마지막으로 던짐
+    }
+
+    public void checkCards() {
+        for (Card c : cards) {
+            System.out.println(c);
+        }
     }
 
 
@@ -74,13 +84,19 @@ public class CardDeck {
 
     private void shuffle() {
         for(int i = 0; i < cards.length; i++) {
-            int rIdx = (int)(Math.random() * cards.length); //0~51
-            Card temp = cards[i];
+            int rIdx = (int)(Math.random() * cards.length); //0 ~ 51
+            Card tmp = cards[i];
             cards[i] = cards[rIdx];
-            cards[rIdx] = temp;
+            cards[rIdx] = tmp;
         }
     }
 
+    //n: 1 > "A"
+    //n: 2~10 > 그대로 문자열로 만들어서 2 > "2", 3 > "3", 10 > "10"
+    //n:11 > "J"
+    //n:12 > "Q"
+    //n:13 > "K"
+    //나머지값 > ""
     public String getDenomination(int n) {
         if(n < 1 || n > 13) {
             return "";
