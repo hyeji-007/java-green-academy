@@ -20,7 +20,7 @@ public class CardDeck {
         //미션1
         // "", "" 값을 가지고 있는 Card객체를 52개를 만들고 cards배열에 하나씩 넣어라
 
-
+        //모두 다른값을 가지고 있는 Card객체 만들어서 cards에 순차적으로 넣어주세요.
         int idx = 0;
         for(int i = 0; i < patterns.length; i++) { //0, 1, 2, 3 >> 총 4번 실행
             String pattern = patterns[i];
