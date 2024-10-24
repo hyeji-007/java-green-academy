@@ -13,7 +13,7 @@ public class Gamer {
 
     //Gamer 생성자
     public Gamer() {
-        cards = new ArrayList();
+        cards = new ArrayList<>();
     }
 
     //카드를 받아서 cards 리스트에 추가하는 메서드
@@ -30,11 +30,18 @@ public class Gamer {
         cards.add(c1);
     }
 
-    //카드들을 출력하는 메서드 (receiveCard 테스트 추가됨)
+    //카드들을 출력하는 메서드
     public void showYourCards() {
+        //receiveCard 메서드 호출
+        System.out.println("--- receiveCard test ---");
+        receiveCard(new Card("Diamond","7"));
+        receiveCard(new Card("Heart","A"));
+        receiveCard(new Card("Clova","K"));
+
+        //각 카드 출력(세로로)
         for (int i = 0; i < cards.size(); i++) {
             Card item = cards.get(i);
-            System.out.println(item); //세로로 찍기
+            System.out.println(item);
         }
 
         System.out.println("----------------------------");
@@ -44,6 +51,7 @@ public class Gamer {
 //        }
     }
 
+    //카드 리스트 반환 메서드
     public List<Card> openCards() {
         return cards;
     }
