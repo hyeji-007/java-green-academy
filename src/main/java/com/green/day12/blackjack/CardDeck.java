@@ -1,6 +1,7 @@
 package com.green.day12.blackjack;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class CardDeck {
     //Card 객체 주소값 52개를 저장할 수 있어야 한다.
@@ -10,7 +11,7 @@ public class CardDeck {
 
     public CardDeck() {
         /*
-        Card c; = null; //지역 변수는 사용하기 전에 초기화해주어야 한다. 객체화가 된 애들은 기본적은로 default값을 갖는다.
+        Card c = null; //지역 변수는 사용하기 전에 초기화해주어야 한다. 객체화가 된 애들은 기본적은로 default값을 갖는다.
         c.getPattern();
          */
         cards = new Card[52];
@@ -54,8 +55,14 @@ public class CardDeck {
 
     }
 
+
+
     // 주소값 하나씩 리턴, 리턴 주소값 지워야하고 selectedIdx 이용하여 해결
     public Card draw() { //스와핑이랑 비슷함
+
+        if(selectedIdx == 52) {
+            return null;
+        }
         Card tmp = cards[selectedIdx];
         cards[selectedIdx]  = null;
         selectedIdx++; //카드를 빼낼 자리: selectedIdx
