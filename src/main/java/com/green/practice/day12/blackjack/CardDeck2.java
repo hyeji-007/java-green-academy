@@ -9,13 +9,17 @@ public class CardDeck2 {
         cards = new Card[52];
         patterns = new String[] {"Diamond", "Heart", "Clova", "Spade"};
 
+        //모두 다른값을 가지고 있는 Card객체 만들어서 cards에 순차적으로 넣어주세요.
         int idx = 0;
         for(int i = 0; i < patterns.length; i++) {
             String pattern = patterns[i];
-        } for(int z = 1; z <= 13; z++) {
-            String denomination = getDenomination(z);
-            //cards[idx++] = new Card(pattern, denomination);
+            for(int z = 1; z <= 13; z++) {
+                String denomination = getDenomination(z);
+                cards[idx++] = new Card(pattern, denomination);
+            }
         }
+
+
         shuffle();
     }
 
@@ -25,6 +29,7 @@ public class CardDeck2 {
             Card tmp = cards[i];
             cards[i] = cards[rIdx];
             cards[rIdx] = tmp;
+
         }
     }
 
@@ -36,6 +41,7 @@ public class CardDeck2 {
         cards[selectedIdx] = null;
         selectedIdx++;
         return tmp;
+
     }
 
     public void checkCards() {
