@@ -11,19 +11,19 @@ public class MyArrayListTest  {
         System.out.println(list.size()); //0
         list.add(10);
         System.out.println(list); //[10]
-        System.out.println(list.size()); //0
+        System.out.println(list.size()); //1
         list.add(20);
         System.out.println(list); //[10, 20]
-        System.out.println(list.size()); //0
+        System.out.println(list.size()); //2
         list.add(30);
         System.out.println(list);
-        System.out.println(list.size()); //0
+        System.out.println(list.size()); //3
         list.add(40);
         System.out.println(list);
-        System.out.println(list.size());
+        System.out.println(list.size()); //4
         list.clear();
-        System.out.println(list);
-        System.out.println(list.size());
+        System.out.println(list); //[]
+        System.out.println(list.size()); //0
     }
 }
 
