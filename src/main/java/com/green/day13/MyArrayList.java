@@ -35,8 +35,6 @@ public class MyArrayList {
         }
         sb.append("]");
         return sb.toString();
-
-
     }
 
     public int size() {
@@ -56,8 +54,6 @@ public class MyArrayList {
         int removeVal = arr[tmp.length];
         arr = tmp;
         return removeVal;
-
-
     }
 
 
