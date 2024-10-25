@@ -9,7 +9,7 @@ public class ListStudy2 {
         //제네릭을 사용하면 실행시에 타입이 결정된다.
         //제네릭이 사용된 클래스에 타입을 결정하지 않으면 타입은 object가 된다.
         //아래 3가지의 결과는 같다. 맘에 드는 것 사용
-        List<Integer> list = new ArrayList(); //실행될 때 type이 결정되는 것이 <Integer>제네릭
+        List<Integer> list = new ArrayList(); //실행될 때 type이 결정되는 것이 <Integer>제네릭, <>에는 reference type만 들어간다.
         List<Integer> list2 = new ArrayList<>();
         List<Integer> list3 = new ArrayList<Integer>();
         //list.add(""); //정수형 값만 들어갈 수 있는 ArrayList객체가 만들어짐

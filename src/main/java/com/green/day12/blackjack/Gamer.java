@@ -8,19 +8,19 @@ public class Gamer {
     //ArrayList 사용할거임
     //멤버필드 선언, 변수명은 cards
 
-    private final List<Card> cards;
-    private int point;
+    protected final List<Card> cards;
+    protected int point;
 
     //Gamer 생성자
     public Gamer() {
-        cards = new ArrayList<>();
+        cards = new ArrayList();
     }
 
     //카드를 받아서 cards 리스트에 추가하는 메서드
     public void receiveCard(Card c1) {
         //switch expression : 값을 리턴해준다.
-        int point = switch(c1.getDenomination()) {
-            case "A" -> 1;
+        this.point += switch(c1.getDenomination()) {
+            case "A" -> { yield 1; }
             case "J", "Q", "K" -> 10;
             default -> Integer.parseInt(c1.getDenomination());
         };
@@ -28,6 +28,11 @@ public class Gamer {
         String str = "10";
         int val = Integer.parseInt(str); //val 변수에 10 정수값이 주입된다.
         cards.add(c1);
+    }
+
+    public int getPoint() {
+        return point;
+
     }
 
     //카드들을 출력하는 메서드

@@ -24,15 +24,18 @@ class CardTest2 {
         CardDeck cd = new CardDeck();
         Card c1 = cd.draw();
         Gamer gamer = new Gamer();
-        gamer.receiveCard(c1);
+        gamer.receiveCard(c1); //카드를 저장한다.
+        gamer.receiveCard(cd.draw());
+        gamer.receiveCard(cd.draw());
         gamer.receiveCard(cd.draw());
         gamer.receiveCard(cd.draw());
         gamer.showYourCards();
+        System.out.println(gamer.getPoint()); //point값이 출력될 수 있도록
 
         List<Card> list = gamer.openCards();
-
-
     }
+
+
 }
 
 class CardTest3 {
@@ -43,5 +46,12 @@ class CardTest3 {
         dealer.receiveCard(cd.draw());
         dealer.receiveCard(cd.draw());
         dealer.showYourCards();
+    }
+}
+
+class CardTest4 {
+    public static void main(String[] args) {
+        Rule rule = new Rule();
+        rule.getWinner(null, null);
     }
 }

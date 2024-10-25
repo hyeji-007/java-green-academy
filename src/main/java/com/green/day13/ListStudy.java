@@ -26,7 +26,7 @@ public class ListStudy {
 
         ArrayList list2 = (ArrayList)list;
         list2.add(30); //2번방에 주입
-        list2.add("하하"); //3번방에 주입
+        list2.add("하하"); //3번방에 주입 //type이 object라서 아무거나 다 담긴다.
 
         int[] arr = new int[3];
         Object[] arr2 =new Object[4];
