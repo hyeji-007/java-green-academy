@@ -18,12 +18,14 @@ public class MissionForInFor5 {
         }
         System.out.println("-----------------------------------");
 
+
         for(int i = star; i > 0; i--) {
             for(int z = 1; z <= star; z++) {
                 System.out.print(z < i ? "_" : "*");
             }
             System.out.println();
         }
+
 
 
 

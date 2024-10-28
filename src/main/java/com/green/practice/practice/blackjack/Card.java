@@ -1,4 +1,4 @@
-package com.green.practice.practice_2.blackjack;
+package com.green.practice.practice.blackjack;
 
 public class Card {
     private String pattern;

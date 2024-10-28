@@ -1,4 +1,4 @@
-package com.green.practice.practice_2.blackjack;
+package com.green.practice.practice.blackjack;
 
 public class Application {
     public static void main(String[] args) {

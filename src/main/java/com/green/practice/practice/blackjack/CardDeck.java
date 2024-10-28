@@ -1,6 +1,5 @@
-package com.green.practice.practice_2.blackjack;
+package com.green.practice.practice.blackjack;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
