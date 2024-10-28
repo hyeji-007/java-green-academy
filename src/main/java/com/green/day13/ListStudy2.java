@@ -44,6 +44,4 @@ public class ListStudy2 {
         System.out.println(list.size());
 
     }
-
-
 }
