@@ -25,7 +25,7 @@ public abstract class AbstractStudy {
 }
 
 abstract class ImplementsStudy2 extends AbstractStudy {
-
+        //나도 추상 클래스 >> 추상클래스 상속받아도 추상 메소드를 정의하지 않아도 됨
 }
 
 class ImplementsStudy extends AbstractStudy {

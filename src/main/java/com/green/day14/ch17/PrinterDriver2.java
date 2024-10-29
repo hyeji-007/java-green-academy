@@ -11,6 +11,12 @@ public class PrinterDriver2 {
         prn1.print(myDoc);
         System.out.println();
         prn2.print(myDoc);
+
+        //prn1 = prn2;
+        System.out.println("----------------");
+
+        Prn204Drv prn204 = (Prn204Drv)prn1;
+        //prn204 = (Prn204Drv)prn2;
     }
 }
 

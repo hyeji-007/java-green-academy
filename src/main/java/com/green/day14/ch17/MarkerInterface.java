@@ -22,7 +22,7 @@ interface Printable2 { //interface는 object클래스를 상속받을 수 없다
 
     public abstract String getContents();
 }
-interface Upper {}
+interface Upper {} //내용이 하나도 없는 인터페이스(그룹화)
 interface Lower {}
 
 class Report0 extends Object implements Printable2 { //extends 상속은 단일 상속만 가능 implements는 다중 상속 가능

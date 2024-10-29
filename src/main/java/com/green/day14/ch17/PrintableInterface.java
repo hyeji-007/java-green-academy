@@ -15,9 +15,9 @@ public class PrintableInterface {
     public static void main(String[] args) {
         //Printable pl = new Printable();//인터페이스도 추상클래스와 마찬가지로 객체화 안됨 (추상클래스도 안됨)
         Printable p2 = new PrintableImpl();
-        p2.print("dddd");
+        p2.print("dddd"); //객체 기준으로 메소드 실행
         System.out.println(p2.NUM);
-        System.out.println(Printable.NUM); //static 사용할 땐 클래스명.
+        System.out.println(Printable.NUM); //static 사용할 땐 클래스명, static이 붙어서 객체화 없이 바로 사용 가능함
         //Printable.Num = 10;
     }
 }
