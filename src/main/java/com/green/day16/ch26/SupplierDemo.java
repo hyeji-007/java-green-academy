@@ -12,8 +12,6 @@ public class SupplierDemo {
         System.out.println(list1);
         //랜덤 정수값 (0~49) 5개를 가지고 있는 ArrayList를 리턴
 
-
-
         Supplier<Integer> supRandom2 = () -> (int)(Math.random() * 31.0) + 20;
         List<Integer> list2 = makeIntList(supRandom2, 8);
         System.out.println(list2);
