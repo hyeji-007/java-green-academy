@@ -22,7 +22,8 @@ public class ExceptionCase5 {
             System.out.println(e.getMessage());
             e.printStackTrace();
         } catch (Exception e) { //Exception은 항상 가장 아래 catch문에 적을 수 있다.
-
+            e.printStackTrace();
+            e.getMessage();
         }
 
         System.out.println("--------------------------(2)");
