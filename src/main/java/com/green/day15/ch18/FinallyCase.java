@@ -53,7 +53,7 @@ class FinallyCase3 {
             writer.write("FinallyCase");
         } catch (IOException e) {
             e.printStackTrace();
-        } finally { //(실행보장)예외가 발생해도 안해도 "무조건" 실행되는 부분
+        } finally { //(실행보장)예외가 발생해도 안해도 "무조건" 실행되는 부분. try에서 return을 만나더라도 finally는 무조건 실행된다
             try {
                 if (writer != null) {
                     writer.close();

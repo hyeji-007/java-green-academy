@@ -33,6 +33,8 @@ public class MultiTypeParam {
             }
             위 처럼 작성된 class를 객체화 한 것과 같은 효과가 난다.
          */
+
+
     }
 }
 
