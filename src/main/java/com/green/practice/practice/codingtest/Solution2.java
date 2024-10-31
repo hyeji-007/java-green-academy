@@ -1,4 +1,4 @@
-package com.green.practice.practice;
+package com.green.practice.practice.codingtest;
 
 import java.util.Scanner;
 

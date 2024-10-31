@@ -25,7 +25,7 @@ public class UseAnonymousInner {
         {} : 중괄호 생략 가능한 경우는 명령이 한줄인 경우 생략 가능하다.
          */
 
-        Printable p2 = () -> System.out.println("람다 print");
+        Printable p2 = () -> System.out.println("람다 print"); //추상 메소드가 하나여야 람다식(->)을 사용할 수 있다.
 
         p.print();
         p2.print();

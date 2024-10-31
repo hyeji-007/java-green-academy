@@ -10,13 +10,13 @@ import java.util.function.Predicate;
 
 public class PredicateDemo {
     public static void main(String[] args) {
-        Predicate<Integer> preMore10 = n -> n > 10;
-        System.out.println(preMore10.test(9));
-        System.out.println(preMore10.test(10));
-        System.out.println(preMore10.test(11));
+        Predicate<Integer> preMore10 = n -> n > 10; //파라미터가 하나(소괄호 생략 가능), 타입은 Integer, boolean을 리턴
+        System.out.println(preMore10.test(9)); //f
+        System.out.println(preMore10.test(10)); //f
+        System.out.println(preMore10.test(11)); //t
 
         //남자, 남, 여자, 여 이러한 값들만 허용(true), 나머지 false
-        Predicate<String> preCheckGender = s -> "남".equals(s)
+        Predicate<String> preCheckGender = s -> "남".equals(s) //타입은 String,
                 || "남자".equals(s)
                 || "여".equals(s)
                 || "여자".equals(s);
