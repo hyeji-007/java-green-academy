@@ -13,7 +13,6 @@ public class MaxCount2 {
         int maxCount = 0;
         boolean isUnique = true;
 
-        // 최빈값 찾기
         for (int i = 0; i < countArray.length; i++) {
             if (countArray[i] > maxCount) {
                 maxCount = countArray[i];
