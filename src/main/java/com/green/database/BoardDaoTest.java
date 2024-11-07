@@ -22,4 +22,6 @@ public class BoardDaoTest {
         int result = dao.insBoard(board);
         System.out.println("result:" + result);
     }
+
+
 }
