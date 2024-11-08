@@ -11,6 +11,8 @@ public class JBLSpeaker implements Speaker {
         this.woofer = new MartenWoofer();
     }
 
+
+
     @Override //메서드 구현 or abstract
     public void speakerSound() {
         System.out.println("JBL Speaker: 소리가 깔끔하다.");
