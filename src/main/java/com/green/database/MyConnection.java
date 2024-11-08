@@ -10,6 +10,7 @@ public class MyConnection {
     private static final String DB_PASSWORD = "green502";
 
     public static Connection getConn() throws SQLException {
+        //Class.forName("org.mariadb.jdbc.Driver");
         Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
         System.out.println("접속 성공!!");
         return conn;
