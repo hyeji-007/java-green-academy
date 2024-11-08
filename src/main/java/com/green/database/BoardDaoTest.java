@@ -21,7 +21,7 @@ public class BoardDaoTest {
 
         //insert(dao, board);
         //selectAll(dao);
-        selectOne(dao, 3);
+        selectOne(dao, 11);
         //update(dao, board);
         //delete(dao);
     }
