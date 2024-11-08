@@ -1,4 +1,4 @@
-package com.green.day27.noneioc;
+package com.green.day27.ioc;
 
 import com.green.day27.Tv;
 
