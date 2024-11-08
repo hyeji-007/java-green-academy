@@ -1,5 +1,6 @@
 package com.green.day27;
 
+import com.green.day27.ioc.BoseSpeaker;
 import com.green.day27.noneioc.HarmanSpeaker;
 import com.green.day27.noneioc.SamsungTv;
 
@@ -12,5 +13,6 @@ public class Test {
         System.out.println("-----------");
         Tv tv = new SamsungTv();
         tv.sound();
+
     }
 }
