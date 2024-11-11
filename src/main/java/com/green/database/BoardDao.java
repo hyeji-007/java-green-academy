@@ -55,7 +55,7 @@ public class BoardDao {
         return result;
     }
 
-    public List<Board> selBoardList() {
+    public List<Board> selBoardList() { //MyBatis
         List<Board> list = new ArrayList<>();
         String sql = " SELECT board_id, title, writer, created_at " +
                 " FROM board " +
